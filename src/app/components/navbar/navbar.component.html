@@ -1,0 +1,95 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-white pb-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="flex justify-center items-center border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10"
+    >
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="#">
+          <span></span>
+        </a>
+      </div>
+      <nav class="md:flex space-x-10">
+        <a href="#">
+          <p class="font-serif font-bold uppercase text-2xl">News City</p>
+        </a>
+      </nav>
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <a
+          href="#"
+          class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+        >
+          Sign in
+        </a>
+        <a
+          href="#"
+          class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-300 hover:bg-indigo-500"
+        >
+          Sign up
+        </a>
+      </div>
+    </div>
+    <div
+      class="grid grid-cols-2 text-center md:grid-cols-7 place-content-center mt-2 font-serif font-bold"
+    >
+      <a
+        href="/news/business"
+        class="uppercase text-sm"
+        (click)="consult('business')"
+      >
+        Business
+      </a>
+      <a
+        href="/news/entretaiment"
+        class="uppercase text-sm"
+        (click)="consult('entretaiment')"
+        >Entretaiment</a
+      >
+      <a
+        href="/news/general"
+        class="uppercase text-sm"
+        (click)="consult('general')"
+      >
+        General
+      </a>
+      <a
+        href="/news/health"
+        class="uppercase text-sm"
+        (click)="consult('health')"
+      >
+        health
+      </a>
+      <a
+        href="/news/science"
+        class="uppercase text-sm"
+        (click)="consult('science')"
+      >
+        science
+      </a>
+      <a
+        href="/news/sports"
+        class="uppercase text-sm"
+        (click)="consult('sports')"
+      >
+        sports
+      </a>
+      <a
+        href="/news/technology"
+        class="uppercase text-sm"
+        (click)="consult('technology')"
+      >
+        technology
+      </a>
+    </div>
+  </div>
+  <!--
+      Mobile menu, show/hide based on mobile menu state.
+  
+      Entering: "duration-200 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+</div>
